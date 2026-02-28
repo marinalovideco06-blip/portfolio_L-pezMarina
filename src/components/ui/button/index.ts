@@ -19,6 +19,9 @@ export const buttonVariants = cva(
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
+
+        marina_boton: 
+          "bg-white border-black border-2 rounded-full text-black px-12 py-2 hover:bg-[rgb(24,61,246)] hover:text-white transition-all hover:border-[rgb(24,61,246)] text-base"
       },
       size: {
         "default": "h-9 px-4 py-2 has-[>svg]:px-3",

@@ -1,12 +1,14 @@
 <script lang="ts" setup>
 
+import Button from '@/components/ui/button/Button.vue';
+
 </script>
 
 <template>
 
-    <div class="h-screen w-full flex">
+    <div class="relative h-screen w-full flex">
         <img 
-          class="absolute inset-0 w-full h-full object-cover" 
+          class="absolute inset-0 w-full h-full object-cover pointer-events-none" 
           src="/imagenes/home/aura_portada.PNG" 
           alt="">
         
@@ -23,7 +25,25 @@
               </h2>
 
           </div>
-        
+          
+          <div class="relative z-20 flex justify-center items-end pb-35 gap-6 w-full">
+             <Button variant="marina_boton">
+                <RouterLink to="/info">
+                  Información profesional
+                </RouterLink>
+              </Button>    
+             <Button variant="marina_boton">
+                <RouterLink to="/trabajos">
+                  Selección de trabajos
+                </RouterLink>   
+             </Button>    
+             <Button variant="marina_boton">
+                <RouterLink to="/contactos">
+                  Contacto y redes
+                </RouterLink>
+             </Button>    
+          </div>
+       
     </div>
 
 </template>
@@ -49,6 +69,8 @@
     font-family: 'Urbanist';
   }
 
-  
+  button {
+    font-family: "Urbanist";
+  }
 
 </style>
