@@ -15,12 +15,27 @@
 
        </section>
 
-       <section id="personal" class="bg-white w-full">
+       <section id="personal" class="bg-white w-full min-h-[60vh] lg:min-h-[95vh] flex flex-row">
         
-        <h1>
-           información personal. 
-        </h1>
-
+        <img 
+           src="/imagenes/informacion/imagen_1.jpg" 
+           alt=""
+           class="w-2/3 h-auto">
+        <div class="flex flex-col ">
+            <div class="border-black border-4 rounded-full flex flex-row items-center m-10 mt-20">
+            <img 
+               src="/imagenes/informacion/aura-32.png" 
+               alt="">
+            <h1 class="text-4xl">
+               información personal. 
+            </h1>
+            </div>
+       
+            <p class="m-40 mt-20">
+            Mi nombre es Marina López Villegas, y soy una diseñadora, ilustradora y escritura. Especializada en desarrollo de proyectos multidisciplinares de organización, marketing, narrativa y storytelling y desarrollo de tecnologías interactivas 
+            </p>
+        </div>   
+       
        </section>
 
        <section id="titulación">
@@ -58,6 +73,10 @@
 
   h2 {
     font-family: 'Urbanist';
+  }
+
+  p {
+    font-family: Urbanist;
   }
 
 </style>
