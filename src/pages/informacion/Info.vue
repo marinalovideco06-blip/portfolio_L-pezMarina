@@ -15,14 +15,23 @@
 
        </section>
 
-       <section id="personal" class="bg-white w-full min-h-[60vh] lg:min-h-[95vh] flex flex-row">
+       <section id="personal" class="bg-white w-full min-h-[60vh] lg:min-h-[120vh] flex flex-row">
         
-        <img 
+         <div class="flex flex-col p-10 justify-center gap-15">
+          <img 
            src="/imagenes/informacion/imagen_1.jpg" 
            alt=""
-           class="w-2/3 h-auto">
-        <div class="flex flex-col ">
-            <div class="border-black border-4 rounded-full flex flex-row items-center m-10 mt-20">
+           class="w-2/2 h-auto">
+
+           <img 
+           src="/imagenes/informacion/imagen_2.jpg" 
+           alt=""
+           class="w-2/2 h-auto">
+         </div>
+        
+
+        <div class="flex flex-col justify-start ">
+            <div class="border-black border-4 rounded-full flex flex-row items-center m-10 mt-10">
             <img 
                src="/imagenes/informacion/aura-32.png" 
                alt="">
@@ -38,15 +47,15 @@
        
        </section>
 
-       <section id="titulación">
+       <section id="titulación" class="bg-black w-full min-h-[60vh] lg:min-h-[95vh] flex items-center">
 
        </section>
 
-       <section id="aplicaciones">
+       <section id="aplicaciones" class="bg-white w-full min-h-[60vh] lg:min-h-[120vh] flex flex-row">
 
        </section>
 
-       <section id="habilidades">
+       <section id="habilidades" class="bg-black w-full min-h-[60vh] lg:min-h-[95vh] flex items-center">
 
        </section>
     </div>
@@ -77,6 +86,7 @@
 
   p {
     font-family: Urbanist;
+    font-weight: 600;
   }
 
 </style>
