@@ -12,12 +12,37 @@ import {
   //NavigationMenuViewport,
 } from '@/components/ui/navigation-menu'
 
+import { Label } from '@/components/ui/label'
+
+import { Input } from '@/components/ui/input'
+
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '@/components/ui/popover'
+
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
+
 const scrollToSection = (id: string) => {
   const section = document.getElementById(id)
   if (section) {
     section.scrollIntoView({ behavior: 'smooth' })
   }
 }
+
+import { Calendar } from '@/components/ui/calendar'
+import type { DateValue } from "reka-ui";
+import { ref } from "vue"
+
+const dies = ref<DateValue>()
+   
 
 </script>
 
@@ -64,42 +89,89 @@ const scrollToSection = (id: string) => {
 
        <section id="comisiones." class="bg-white w-full min-h-[60vh] lg:min-h-[120vh] flex flex-row">
         
-         <div class="flex flex-col p-10 justify-center gap-15">
-          <img 
-           src="/imagenes/informacion/imagen_1.jpg" 
-           alt=""
-           class="w-2/2 h-auto">
+         <div class="w-full max-w-md mx-auto lg:max-w-none lg:w-1/2 mt-20 mb-20">
 
-           <img 
-           src="/imagenes/informacion/imagen_2.jpg" 
-           alt=""
-           class="w-2/2 h-auto">
-         </div>
-        
+          <form  class="flex flex-col gap-20 justify-around bg-black text-white p-20 rounded-4xl shadow-lg aspect-square">
+          
+            <div class="flex flex-col gap-10 justify-around">
 
-        <div class="flex flex-col justify-start ">
-            <div class="border-black border-4 rounded-full flex flex-row items-center m-10 mt-13">
-            <img 
-               src="/imagenes/informacion/aura-32.png" 
-               alt="">
-            <h1 class="text-4xl">
-               información personal. 
-            </h1>
+              <div class="space-y-2 rounded-full">
+             <div></div>     
+              <Label for="nombre" class="font-bold font-[Outfit] text-2xl">nombre y apellidos.</Label>
+               <Input id="nombre" required class="rounded-full font-[Urbanist]"/>
+          </div>
+                
+          <div class="space-y-2">
+              
+            <Label for="apellidos" class="font-bold font-[Outfit] text-2xl">correo electrónico.</Label>
+               <Input id="apellidos" required class="rounded-full font-[Urbanist]" />
+
+          </div>
+
+          <div class="space-y-2">
+
+           <Select required>
+    <SelectTrigger class="border-[rgb(24,61,246)] rounded-full bg-white text-[rgb(24,61,246)] font-bold font-[Outfit] text-2xl">
+      <SelectValue placeholder="tipo de proyecto." />
+    </SelectTrigger>
+    <SelectContent class="bg-white font-[Urbanist]">
+      <SelectItem value="ilustración.">
+        ilustración.
+      </SelectItem>
+      <SelectItem value="ux/ui.">
+        ux/ui.
+      </SelectItem>
+      <SelectItem value="marketing.">
+        marketing.
+      </SelectItem>
+      <SelectItem value="diseño.">
+        diseño.
+      </SelectItem>
+      <SelectItem value="storytelling.">
+        storytelling.
+      </SelectItem>
+    </SelectContent>
+  </Select>
+
+          </div>
+
+          <div class="space-y-2">
+
+            <Label class="font-bold font-[Outfit] text-2xl">fecha para la reunión.</Label>
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button variant="outline">
+                  <span v-if="dies">
+                    {{ dies.day }}/{{ dies.month }}/{{ dies.year }}
+                  </span>
+                  <span v-else class="font-[Urbanist]">
+                    seleccione fecha.
+                  </span>
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent>
+              <Calendar v-model="dies" />
+              </PopoverContent>
+            </Popover>
+
+          </div>
+
+          <Button type="submit" class="w-full bg-[rgb(24,61,246)] hover:bg-white hover:text-[rgb(24,61,246)] text-md mt-4 font-bold font-[Outfit] text-2xl rounded-full py-2">
+            Enviar solicitud
+          </Button>
+
             </div>
 
-            <div class="flex flex-col items-end">
-               <p class="m-40 mt-20">
-              Mi nombre es Marina López Villegas, y soy una diseñadora, ilustradora y escritura. Especializada en desarrollo de proyectos multidisciplinares de organización, marketing, narrativa y storytelling y desarrollo de tecnologías interactivas 
-            </p>
-
-            <img 
-               src="/imagenes/informacion/minimarina_1.png" 
-               alt=""
-               class="w-50 p-3"
-               >
-            </div>
             
-        </div>   
+
+          <img 
+          src="/imagenes/contactos/imagen_2.jpg" 
+          alt=""
+          class="rounded-lg object-cover w-full h-full max-h-150"
+          >
+              
+        </form>
+         </div> 
        
        </section>
 
