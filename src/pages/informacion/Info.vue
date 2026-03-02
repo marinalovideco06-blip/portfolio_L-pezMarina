@@ -31,7 +31,7 @@
         
 
         <div class="flex flex-col justify-start ">
-            <div class="border-black border-4 rounded-full flex flex-row items-center m-10 mt-10">
+            <div class="border-black border-4 rounded-full flex flex-row items-center m-10 mt-13">
             <img 
                src="/imagenes/informacion/aura-32.png" 
                alt="">
@@ -39,10 +39,19 @@
                información personal. 
             </h1>
             </div>
-       
-            <p class="m-40 mt-20">
-            Mi nombre es Marina López Villegas, y soy una diseñadora, ilustradora y escritura. Especializada en desarrollo de proyectos multidisciplinares de organización, marketing, narrativa y storytelling y desarrollo de tecnologías interactivas 
+
+            <div class="flex flex-col items-end">
+               <p class="m-40 mt-20">
+              Mi nombre es Marina López Villegas, y soy una diseñadora, ilustradora y escritura. Especializada en desarrollo de proyectos multidisciplinares de organización, marketing, narrativa y storytelling y desarrollo de tecnologías interactivas 
             </p>
+
+            <img 
+               src="/imagenes/informacion/minimarina_1.png" 
+               alt=""
+               class="w-50 p-3"
+               >
+            </div>
+            
         </div>   
        
        </section>
