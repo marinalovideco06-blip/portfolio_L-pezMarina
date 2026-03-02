@@ -1,17 +1,64 @@
 <script setup lang="ts">
 import {Facebook, Instagram, Mail, Phone} from "lucide-vue-next"
+
+import {
+  NavigationMenu,
+  //NavigationMenuContent,
+  //NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  //NavigationMenuTrigger,
+  //NavigationMenuViewport,
+} from '@/components/ui/navigation-menu'
+
+const scrollToSection = (id: string) => {
+  const section = document.getElementById(id)
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' })
+  }
+}
+
 </script>
 
 <template>
     <div>
-       <section id="portada" class="bg-black w-full min-h-[60vh] lg:min-h-[95vh] flex items-center">
-         
-         <div class="px-200">
-            <h1 class="bg-black text-white text-6xl border-4 rounded-full px-12 py-4 m-30 mt-110">
+       <section id="portada" class="bg-black w-full min-h-[60vh] lg:min-h-[95vh] flex flex-col ">
+        
+        <div class="flex flex-row justify-between font-[Urbanist]">
+             <h2 class="text-white border-4 rounded-full flex flex-row items-center m-10 mt-13 px-12 py-2 font-bold">
+          Contactos y redes.
+        </h2>
+             <div class="flex flex-row">
+                <NavigationMenu class="text-white border-2 rounded-full flex flex-row items-center m-10 mt-13 px-12 py-2 hover:bg-[rgb(24,61,246)]">
+  <NavigationMenuList >
+
+    <NavigationMenuItem>
+      <NavigationMenuLink @click="scrollToSection('comisiones.')">
+        comisiones.
+      </NavigationMenuLink>
+    </NavigationMenuItem>
+
+    <NavigationMenuItem>
+      <NavigationMenuLink @click="scrollToSection('contactos y redes.')">
+        contactos y redes.
+      </NavigationMenuLink>
+    </NavigationMenuItem>
+
+  </NavigationMenuList>
+</NavigationMenu>
+
+<Button class="text-white border-4 rounded-full m-10 mt-13 px-2 py-2 font-[Urbanist] font-bold hover:bg-[rgb(24,61,246)]">
+  <RouterLink to="/">EXIT</RouterLink>
+</Button>
+             </div>
+          
+        </div>
+       
+
+        <h1 class="bg-black text-white text-6xl border-4 rounded-full px-12 py-4 m-30 mt-110">
            blue.marina
          </h1>
-         </div>
-        
 
        </section>
 
