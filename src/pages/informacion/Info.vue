@@ -64,8 +64,12 @@
 
        </section>
 
-       <section id="habilidades" class="bg-black w-full min-h-[60vh] lg:min-h-[95vh] flex items-center">
-
+       <section id="habilidades" class="bg-black w-full min-h-[60vh] lg:min-h-[140vh] flex items-end">
+           <img 
+           src="/imagenes/trabajos/degradado_negro_abajo.PNG" 
+           alt=""
+           class="z-10 absolute"
+           >
        </section>
     </div>
 </template>
