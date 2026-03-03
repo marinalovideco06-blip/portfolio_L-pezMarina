@@ -14,10 +14,10 @@ const autoplay = Autoplay({
 
 <template>
   <div>
-       <section id="portada" class="bg-black w-full min-h-[60vh] lg:min-h-[120vh] flex flex-col">
+       <section id="portada" class="bg-black w-full flex flex-col">
           
         <div class="flex flex-row justify-between font-[Urbanist]">
-             <h2 class="text-white border-4 rounded-full flex flex-row items-center m-10 mt-13 px-12 py-2 font-bold">
+             <h2 class="text-white border-4 rounded-full flex flex-row items-center m-10 mt-13 px-5 py-2 font-bold">
                  Trabajos.
              </h2>
              <div class="flex flex-row">  
@@ -55,21 +55,68 @@ const autoplay = Autoplay({
   </CarouselContent>
 </Carousel>
             </div>
-            
-               <h1 class="bg-black text-white text-6xl border-4 rounded-full px-12 py-4 mb-4 mt-60">
+
+            <div>
+              <h1 class="bg-black text-white text-6xl border-4 rounded-full px-12 py-4 mb-4 mt-60 flex justify-center">
                    selección de trabajos.
                </h1>
                <div class="z-20">
-        <p class="text-white">
+        <p class="text-white p-40 text-lg px-95">
           He realizado gran cantidad de trabajos a lo largo de mi carrera pero he querido hacer un recopilatorio de los más relevantes y que más representan mi estilo personal y competencia.. 
         </p>
-       </div>
-       
+            </div>
+            
+            <div class="flex flex-row justify-center gap-10">
+              <Button>
+              <RouterLink to="/ilustracion">
+                <div class="border-white text-white border-4 rounded-full flex flex-row items-center px-10 mt-13 hover:bg-white hover:text-[rgb(24,61,246)]">
+                   <img 
+                      src="/imagenes/trabajos/aura-36.png" 
+                      alt=""
+                      class="w-30 m-2">
+                   <h1 class="text-4xl">
+                      ilustración. 
+                   </h1>
+                </div>
+              </RouterLink>
+              </Button>
 
-        <div class="flex items-end">
-          <img src="/imagenes/trabajos/degradado_negro_abajo.PNG" alt="">
+             <Button>
+              <RouterLink to="/ilustracion">
+                <div class="border-white text-white border-4 rounded-full flex flex-row items-center px-10 mt-13 hover:bg-white hover:text-[rgb(24,61,246)]">
+            <img 
+               src="/imagenes/trabajos/aura-41.png" 
+               alt=""
+               class="w-30 m-2">
+            <h1 class="text-4xl">
+               marketing. 
+            </h1>
+            </div>
+              </RouterLink>
+            </Button>
+
+
+             <Button>
+              <RouterLink to="/ilustracion">
+                <div class="border-white text-white border-4 rounded-full flex flex-row items-center px-10 mt-13 hover:bg-white hover:text-[rgb(24,61,246)]">
+            <img 
+               src="/imagenes/trabajos/aura-40.png" 
+               alt=""
+               class="w-30 m-2">
+            <h1 class="text-4xl">
+               diseño. 
+            </h1>
+            </div>
+              </RouterLink>
+            </Button>
+            </div>
+            </div>
+          <div class="mt-0">
+          <img 
+             src="/imagenes/trabajos/aura_abajo.png" 
+             alt=""
+             class="w-full z-10">
         </div>
-
        </section>
     </div>
 </template>
