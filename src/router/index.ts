@@ -1,7 +1,6 @@
 import Contactos from "@/pages/contactos/Contactos.vue";
 import Home from "@/pages/home/Home.vue";
 import Info from "@/pages/informacion/Info.vue";
-import Ilustracion from "@/pages/trabajos/Ilustracion.vue";
 import Trabajos from "@/pages/trabajos/Trabajos.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
 
@@ -35,12 +34,6 @@ export const router = createRouter({
       component: Contactos
     },
     
-    {
-      path: '/ilustracion',
-      name: 'contactos',
-      component: Ilustracion
-    },
-
     {
   path: '/seccion/:slug',
   name: 'section',
