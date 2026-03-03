@@ -18,6 +18,15 @@ const scrollToSection = (id: string) => {
   }
 }
 
+import { Card, CardContent } from '@/components/ui/card'
+import { Carousel, CarouselContent, CarouselItem} from '@/components/ui/carousel'
+import Autoplay from 'embla-carousel-autoplay'
+
+const autoplay = Autoplay({
+  delay: 1500,
+  stopOnInteraction: false,
+})
+
 </script>
 
 
@@ -124,8 +133,38 @@ const scrollToSection = (id: string) => {
 
        </section>
 
-       <section id="habilidades" class="bg-black w-full min-h-[60vh] lg:min-h-[140vh] flex items-end">
-           <img 
+       <section id="habilidades" class="bg-black w-full min-h-[60vh] lg:min-h-[200vh] flex flex-col justify-end">
+        
+          <div class="z-20 mb-100">
+              <Carousel
+                class="relative w-full"
+                :opts="{
+                align: 'start',
+                loop: true
+                }"
+                :plugins="[autoplay]"
+                >
+                  <CarouselContent>
+                      <CarouselItem
+                         v-for="(_, index) in 10"
+                         :key="index"
+                         class="basis-4/5 sm:basis-1/2 lg:basis-1/4"
+                         >
+                            <div class="p-1">
+                               <Card>
+                                 <CardContent class="flex aspect-square items-center justify-center p-10">
+                                    <span class="text-3xl font-semibold">
+                                      {{ (index % 5) + 1 }}
+                                    </span>
+                                 </CardContent>
+                               </Card>
+                            </div>
+                      </CarouselItem>
+                  </CarouselContent>
+               </Carousel>
+            </div>
+        
+        <img 
            src="/imagenes/trabajos/degradado_negro_abajo.PNG" 
            alt=""
            class="z-10 absolute"

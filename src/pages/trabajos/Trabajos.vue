@@ -14,7 +14,7 @@ const autoplay = Autoplay({
 
 <template>
   <div>
-       <section id="portada" class="bg-black w-full min-h-[60vh] lg:min-h-[180vh] flex flex-col">
+       <section id="portada" class="bg-black w-full min-h-[60vh] lg:min-h-[120vh] flex flex-col">
           
         <div class="flex flex-row justify-between font-[Urbanist]">
              <h2 class="text-white border-4 rounded-full flex flex-row items-center m-10 mt-13 px-12 py-2 font-bold">
@@ -27,7 +27,7 @@ const autoplay = Autoplay({
              </div>
             </div>
 
-            <div>
+            <div class="mt-40">
               <Carousel
   class="relative w-full"
   :opts="{
@@ -56,12 +56,20 @@ const autoplay = Autoplay({
 </Carousel>
             </div>
             
-               <h1 class="bg-black text-white text-6xl border-4 rounded-full px-12 py-4 m-30 mt-110">
-                   blue.marina
+               <h1 class="bg-black text-white text-6xl border-4 rounded-full px-12 py-4 mb-4 mt-60">
+                   selección de trabajos.
                </h1>
+               <div class="z-20">
+        <p class="text-white">
+          He realizado gran cantidad de trabajos a lo largo de mi carrera pero he querido hacer un recopilatorio de los más relevantes y que más representan mi estilo personal y competencia.. 
+        </p>
+       </div>
+       
+
         <div class="flex items-end">
           <img src="/imagenes/trabajos/degradado_negro_abajo.PNG" alt="">
         </div>
+
        </section>
     </div>
 </template>
@@ -69,6 +77,30 @@ const autoplay = Autoplay({
 
 
 <style scoped>
+
+ @font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit.ttf');
+  }
+
+  h1 {
+    font-family: 'Outfit';
+    font-weight: 500;
+  }
+
+   @font-face {
+  font-family: 'Urbanist';
+  src: url('/fonts/Urbanist.ttf');
+  }
+
+  h2 {
+    font-family: 'Urbanist';
+  }
+
+  p {
+    font-family: Urbanist;
+    font-weight: 600;
+  }
 
 
 </style>
