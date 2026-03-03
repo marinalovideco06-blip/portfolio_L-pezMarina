@@ -88,8 +88,33 @@ const dies = ref<DateValue>()
        </section>
 
        <section id="comisiones." class="bg-white w-full min-h-[60vh] lg:min-h-[120vh] flex flex-row">
-        
-         <div class="w-full max-w-md mx-auto lg:max-w-none lg:w-1/2 mt-20 mb-20">
+
+          <div class="flex flex-col justify-between items-start">
+          <div class="flex flex-col">
+           <div class="border-black border-4 rounded-full flex flex-row items-center justify-start m-10 mt-20 px-20">
+            <img 
+               src="/imagenes/contactos/aura-38.png" 
+               alt=""
+               class="mb-6">
+            <h1 class="text-4xl">
+               comisiones. 
+            </h1>
+            </div>
+
+            <div class="m-8 px-30">
+              <p>Si estás interesado en realizar una comisión, rellena el siguiente formulario y podremos concretar una reunión para hablar los detalles,estoy deseando saber sobre tus ideas...</p>
+            </div>
+         </div>
+          <div>
+            <img 
+            src="/imagenes/contactos/imagen_2.jpg" 
+            alt=""
+            class="w-100 mb-20"
+            >
+          </div>
+        </div> 
+
+         <div class="w-full max-w-md mx-auto lg:max-w-none lg:w-1/2 mt-20 mb-20 px-10">
 
           <form  class="flex flex-col gap-20 justify-around bg-black text-white p-20 rounded-4xl shadow-lg aspect-square">
           
@@ -172,6 +197,8 @@ const dies = ref<DateValue>()
               
         </form>
          </div> 
+          
+          
        
        </section>
 
