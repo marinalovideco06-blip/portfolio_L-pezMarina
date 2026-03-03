@@ -67,49 +67,33 @@ const autoplay = Autoplay({
             </div>
             
             <div class="flex flex-row justify-center gap-10">
-              <Button>
-              <RouterLink to="/ilustracion">
-                <div class="border-white text-white border-4 rounded-full flex flex-row items-center px-10 mt-13 hover:bg-white hover:text-[rgb(24,61,246)]">
-                   <img 
-                      src="/imagenes/trabajos/aura-36.png" 
-                      alt=""
-                      class="w-30 m-2">
-                   <h1 class="text-4xl">
-                      ilustración. 
-                   </h1>
-                </div>
-              </RouterLink>
-              </Button>
+  <Button>
+    <RouterLink :to="`/seccion/ilustracion`">
+      <div class="border-white text-white border-4 rounded-full flex flex-row items-center px-10 mt-13 hover:bg-white hover:text-[rgb(24,61,246)]">
+        <img src="/imagenes/trabajos/aura-36.png" alt="" class="w-30 m-2">
+        <h1 class="text-4xl">ilustración.</h1>
+      </div>
+    </RouterLink>
+  </Button>
 
-             <Button>
-              <RouterLink to="/ilustracion">
-                <div class="border-white text-white border-4 rounded-full flex flex-row items-center px-10 mt-13 hover:bg-white hover:text-[rgb(24,61,246)]">
-            <img 
-               src="/imagenes/trabajos/aura-41.png" 
-               alt=""
-               class="w-30 m-2">
-            <h1 class="text-4xl">
-               marketing. 
-            </h1>
-            </div>
-              </RouterLink>
-            </Button>
+  <Button>
+    <RouterLink :to="`/seccion/marketing`">
+      <div class="border-white text-white border-4 rounded-full flex flex-row items-center px-10 mt-13 hover:bg-white hover:text-[rgb(24,61,246)]">
+        <img src="/imagenes/trabajos/aura-41.png" alt="" class="w-30 m-2">
+        <h1 class="text-4xl">marketing.</h1>
+      </div>
+    </RouterLink>
+  </Button>
 
-
-             <Button>
-              <RouterLink to="/ilustracion">
-                <div class="border-white text-white border-4 rounded-full flex flex-row items-center px-10 mt-13 hover:bg-white hover:text-[rgb(24,61,246)]">
-            <img 
-               src="/imagenes/trabajos/aura-40.png" 
-               alt=""
-               class="w-30 m-2">
-            <h1 class="text-4xl">
-               diseño. 
-            </h1>
-            </div>
-              </RouterLink>
-            </Button>
-            </div>
+  <Button>
+    <RouterLink :to="`/seccion/diseno`">
+      <div class="border-white text-white border-4 rounded-full flex flex-row items-center px-10 mt-13 hover:bg-white hover:text-[rgb(24,61,246)]">
+        <img src="/imagenes/trabajos/aura-40.png" alt="" class="w-30 m-2">
+        <h1 class="text-4xl">diseño.</h1>
+      </div>
+    </RouterLink>
+  </Button>
+</div>
             </div>
           <div class="mt-0">
           <img 

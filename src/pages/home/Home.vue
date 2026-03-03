@@ -8,6 +8,22 @@ import Button from '@/components/ui/button/Button.vue';
 
     <div class="relative h-screen w-full flex overflow-hidden">
       
+     <div>
+          <footer class="absolute top-0 left-0 w-full z-30 
+              text-center text-white bg-[rgb(24,61,246)] 
+               border border-black py-3">
+     <div>
+     <strong>All Rights Reserved</strong> - Marina López Villegas - 2006-2026
+     </div>
+
+     <small>
+        This app was done by Marina López
+     </small>
+          </footer>
+
+          </div>
+          
+
       <div>
          <img 
           class="absolute inset-0 w-full h-full object-cover pointer-events-none" 
@@ -40,7 +56,7 @@ import Button from '@/components/ui/button/Button.vue';
       
       
           
-          <div  class="relative z-20 flex 
+          <div  class="relative z-20 flex
          flex-col md:flex-row
          justify-center items-center md:items-end
          pb-16 md:pb-35
@@ -62,6 +78,8 @@ import Button from '@/components/ui/button/Button.vue';
              </Button>    
           </div>
        
+          
+
     </div>
 
 </template>

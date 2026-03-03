@@ -42,8 +42,20 @@ export const router = createRouter({
     },
 
     {
+  path: '/seccion/:slug',
+  name: 'section',
+  component: () => import('@/views/SectionView.vue')
+},
+{
+  path: '/trabajo/:id',
+  name: 'work',
+  component: () => import('@/views/WorkDetail.vue')
+},
+
+    {
       path: '/:patchMatch(.*)',
       redirect: '/'
     }
   ]
 })
+
