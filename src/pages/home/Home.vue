@@ -10,13 +10,13 @@ import Button from '@/components/ui/button/Button.vue';
       
      <div>
           <footer class="absolute top-0 left-0 w-full z-30 
-              text-center text-white bg-[rgb(24,61,246)] 
-               border border-black py-3">
-     <div>
+              text-center text-white hover:bg-[rgb(24,61,246)] 
+                py-3">
+     <div class="font-[Outfit]">
      <strong>All Rights Reserved</strong> - Marina López Villegas - 2006-2026
      </div>
 
-     <small>
+     <small class="font-[Urbanist]">
         This app was done by Marina López
      </small>
           </footer>

@@ -13,31 +13,97 @@ const filteredWorks = works.filter(w => w.section === slug)
 </script>
 
 <template>
-  <div class="bg-black w-full min-h-screen flex flex-col items-center">
-    <h1 class="text-white text-6xl mt-10">{{ section?.name }}</h1>
 
-    <div class="mt-10 flex gap-4">
-      <RouterLink to="/otra-pagina-1">
-        <button class="border px-4 py-2 text-white">Botón 1</button>
+  <img 
+  src="/imagenes/trabajos/degradado_blanco_horizontal.PNG" 
+  alt=""
+  class="absolute z-10">
+
+  <div class="bg-white w-full min-h-screen flex flex-col gap-20 items-center z-20">
+    <h1 class="text-black text-9xl mt-40 z-20">{{ section?.name }}</h1>
+
+    <div class="mt-10 flex gap-4 z-20">
+      <RouterLink to="/contactos">
+        <button class="z-20 border-2 bg-black rounded-full border-black px-6 py-2 text-white hover:bg-[rgb(24,61,246)] hover:border-[rgb(24,61,246) hover:text-white hover:border-[rgb(24,61,246)]">comisiones.</button>
       </RouterLink>
-      <RouterLink to="/otra-pagina-2">
-        <button class="border px-4 py-2 text-white">Botón 2</button>
+      <RouterLink to="/trabajos">
+        <button class="z-20 border-2 rounded-full border-black px-2 py-2 text-black hover:bg-[rgb(24,61,246)] hover:border-[rgb(24,61,246) hover:text-white hover:border-[rgb(24,61,246)]">EXIT</button>
       </RouterLink>
     </div>
 
-    <div class="mt-10 w-full max-w-6xl">
-      <Carousel :opts="{ loop: true }">
-        <CarouselContent>
-          <CarouselItem v-for="work in filteredWorks" :key="work.id">
-            <RouterLink :to="`/trabajo/${work.id}`">
-              <div class="p-2 border rounded-lg bg-white flex flex-col items-center">
-                <img :src="work.image" class="w-32 h-32 object-cover"/>
-                <p>{{ work.title }}</p>
-              </div>
-            </RouterLink>
-          </CarouselItem>
-        </CarouselContent>
-      </Carousel>
+    <p class="text-lg mt-20 px-100">
+      {{ section?.text }}
+    </p>
+
+    <div class="mt-20 mb-40 w-full max-w-7xl z-20 px-10 overflow-hidden">
+  <Carousel
+    :opts="{
+      align: 'start',
+      loop: true
+    }"
+    class="w-full"
+  >
+    <CarouselContent class="flex">
+
+      <CarouselItem
+        v-for="work in filteredWorks"
+        :key="work.id"
+        class="min-w-62.5 sm:min-w-75 lg:min-w-87.5 mr-6"
+      >
+       <RouterLink :to="`/trabajo/${work.id}`">
+  <div class="relative aspect-square bg-white rounded-2xl shadow-lg overflow-hidden border group cursor-pointer">
+
+    <!-- Imagen -->
+    <img
+      :src="work.image"
+      class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+    />
+
+    <!-- Overlay oscuro -->
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition duration-500"></div>
+
+    <!-- Título -->
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+      <h2 class="text-white text-2xl font-semibold text-center px-4">
+        {{ work.title }}
+      </h2>
     </div>
+
+  </div>
+</RouterLink>
+      </CarouselItem>
+
+    </CarouselContent>
+  </Carousel>
+</div>
   </div>
 </template>
+
+<style scoped>
+
+ @font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit.ttf');
+  }
+
+  h1 {
+    font-family: 'Outfit';
+    font-weight: 600;
+  }
+
+   @font-face {
+  font-family: 'Urbanist';
+  src: url('/fonts/Urbanist.ttf');
+  }
+
+  h2 {
+    font-family: 'Urbanist';
+  }
+
+  p {
+    font-family: Urbanist;
+    font-weight: 600;
+  }
+
+
+</style>
