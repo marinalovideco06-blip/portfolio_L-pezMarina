@@ -53,7 +53,7 @@ const work = works.find(w => w.id === id)
         {{ work?.description }}
       </p>
 
-     <RouterLink :to="`/seccion/${work?.section}`">
+     <RouterLink :to="`/${work?.section}`">
         <button class="z-20 mt-20 border-2 rounded-full border-black px-2 py-2 text-black hover:bg-[rgb(24,61,246)] hover:border-[rgb(24,61,246) hover:text-white hover:border-[rgb(24,61,246)]">EXIT</button>
       </RouterLink>
 

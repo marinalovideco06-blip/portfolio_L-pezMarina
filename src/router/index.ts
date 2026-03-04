@@ -2,6 +2,8 @@ import Contactos from "@/pages/contactos/Contactos.vue";
 import Home from "@/pages/home/Home.vue";
 import Info from "@/pages/informacion/Info.vue";
 import Trabajos from "@/pages/trabajos/Trabajos.vue";
+import SectionView from "@/views/SectionView.vue";
+import WorkDetail from "@/views/WorkDetail.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
 
 export const router = createRouter({
@@ -29,14 +31,14 @@ export const router = createRouter({
       component: Contactos
     },
     {
-      path: '/seccion/:slug',
+      path: '/:slug',
       name: 'section',
-      component: () => import('@/views/SectionView.vue')
+      component: SectionView
     },
     {
       path: '/trabajo/:id',
       name: 'work',
-      component: () => import('@/views/WorkDetail.vue')
+      component: WorkDetail
     },
     {
       path: '/:patchMatch(.*)',
