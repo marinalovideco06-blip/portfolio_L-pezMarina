@@ -28,7 +28,13 @@ const paginaNumeri: number[] = [ ...Array(totalPaginas)].map ((_, i) => i + 1)
 
 
 <template>
-    <div class="flex flex-col items-center justify-center gap-8 w-full max-w-1400px my-8 mx-auto">
+    
+     <img 
+  src="/imagenes/trabajos/degradado_blanco_horizontal.PNG" 
+  alt=""
+  class="absolute top-0 left-0 w-full z-10">
+    
+    <div class="relative flex flex-col items-center justify-center gap-8 w-full max-w-1400px my-8 mx-auto z-20">
   
       <div class="text-center">
 
@@ -39,6 +45,10 @@ const paginaNumeri: number[] = [ ...Array(totalPaginas)].map ((_, i) => i + 1)
         <p class="mb-4">
           Dale a la linea de tu personaje favorito
         </p>
+        
+        <RouterLink to="/info">
+          <button class="rounded-full px-2 py-2 bg-black text-white hover:bg-[rgb(24,61,246)] font-[Urbanist]">EXIT</button>
+        </RouterLink>
 
       </div>
     
@@ -50,7 +60,7 @@ const paginaNumeri: number[] = [ ...Array(totalPaginas)].map ((_, i) => i + 1)
         @click="$router.push(`/info/gallery/${ apps.id }`)"
         >
            <img :src="`/imagenes/info/${ apps.icon }`" alt=""
-           class="w-48 h-42 object-cover object-top mt-2 bg-[rgb(13,222,245)] rounded-t-md border border-black"
+           class="w-48 h-42 object-cover object-top mt-2 rounded-lg border-2 border-black"
            >
             <h2 class="font-medium text-lg">{{ apps.name }}</h2> 
         </CardContent>
@@ -61,10 +71,10 @@ const paginaNumeri: number[] = [ ...Array(totalPaginas)].map ((_, i) => i + 1)
   <button
     @click="ireAdPagina(nuncPagina - 1)"
     :disabled="nuncPagina === 1"
-    :class="['px-4 py-2 rounded-md font-medium transition-colors bg-white hover:bg-[rgb(24,61,246)] hover:text-white',
+    :class="['px-6 py-2 rounded-full font-medium transition-colors font-[Urbanist]',
       nuncPagina === 1
-      ? 'bg-white text-black cursor-not-allowed'
-      : 'bg-[rgb(24,61,246)] hover:bg-black'
+      ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+      : 'bg-[rgb(24,61,246)]  text-white hover:bg-black'
     ]"
   >
     Anterior
@@ -73,27 +83,28 @@ const paginaNumeri: number[] = [ ...Array(totalPaginas)].map ((_, i) => i + 1)
   <button
     v-for="pagina in paginaNumeri"
     @click = "ireAdPagina(pagina)"
-    :class="['w-10 h-10 rounded-md font-medium transition-colors  ',
+    :class="['w-10 h-10 rounded-full font-medium transition-colors font-[Urbanist]',
       nuncPagina === pagina
       ? 'bg-[rgb(24,61,246)] text-white'
-      : 'bg-white hover:bg-[rgb(24,61,246)] hover:text-white'
+      : 'bg-white text-black'
     ]"
   >
     {{ pagina }}
 
   </button>
 
-  <button
+ <button
   :disabled="nuncPagina === totalPaginas"
   @click="ireAdPagina(nuncPagina+1)"
-    :class="['px-4 py-2 rounded-md font-medium transition-colors bg-white hover:bg-[rgb(24,61,246)] hover:text-white',
-      nuncPagina === totalPaginas
-      ? 'bg-black text-white cursor-not-allowed'
-      : 'bg-[rgb(24,61,246)] hover:bg-black'
-    ]"
-  >
-    Siguiente
-  </button>
+  :class="[
+    'px-6 py-2 rounded-full font-medium transition-colors font-[Urbanist]',
+    nuncPagina === totalPaginas
+      ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+      : 'bg-[rgb(24,61,246)] text-white hover:bg-black'
+  ]"
+>
+  Siguiente
+</button>
 </div>
 
     </div>
@@ -102,5 +113,29 @@ const paginaNumeri: number[] = [ ...Array(totalPaginas)].map ((_, i) => i + 1)
 
 
 <style scoped>
+
+ @font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit.ttf');
+  }
+
+  h1 {
+    font-family: 'Outfit';
+    font-weight: 500;
+  }
+
+   @font-face {
+  font-family: 'Urbanist';
+  src: url('/fonts/Urbanist.ttf');
+  }
+
+  h2 {
+    font-family: 'Urbanist';
+  }
+
+  p {
+    font-family: Urbanist;
+    font-weight: 600;
+  }
 
 </style>
