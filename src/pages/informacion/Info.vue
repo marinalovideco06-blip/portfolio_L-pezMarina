@@ -130,7 +130,15 @@ const autoplay = Autoplay({
        </section>
 
        <section id="aplicaciones" class="bg-white w-full min-h-[60vh] lg:min-h-[120vh] flex flex-row">
-
+           <div class="p-10">
+             <h1 class="text-4xl font-bold mb-6">Aplicaciones que uso</h1>
+                <RouterLink to="info/aplicaciones">
+                   <button>Apps</button>
+                </RouterLink>
+                 <RouterLink to="info/gallery">
+                   <button>galeria</button>
+                </RouterLink>
+            </div>
        </section>
 
        <section id="habilidades" class="bg-black w-full min-h-[60vh] lg:min-h-[200vh] flex flex-col justify-end">

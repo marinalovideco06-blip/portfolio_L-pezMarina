@@ -1,5 +1,9 @@
 import Contactos from "@/pages/contactos/Contactos.vue";
 import Home from "@/pages/home/Home.vue";
+import Aplicaciones from "@/pages/informacion/Aplicaciones.vue";
+import Coleccion from "@/pages/informacion/Coleccion.vue";
+import Componente from "@/pages/informacion/Componente.vue";
+import Detalles from "@/pages/informacion/Detalles.vue";
 import Info from "@/pages/informacion/Info.vue";
 import Trabajos from "@/pages/trabajos/Trabajos.vue";
 import SectionView from "@/views/SectionView.vue";
@@ -15,16 +19,53 @@ export const router = createRouter({
       name: 'home',
       component: Home
     },
-    {
-      path: '/info',
-      name: 'informacion',
-      component: Info
-    },
+    
     {
       path: '/trabajos',
       name: 'trabajos',
       component: Trabajos
     },
+     
+    {
+    path : "/info",
+    children: [
+        {
+         path: '',
+         name: 'informacion',
+         component: Info,
+        
+        },
+        {
+          path: 'aplicaciones',
+          component: Aplicaciones,
+          children: [
+           {
+            path:'',
+            name: 'informacion-aplicaciones',
+            component: Componente
+           }
+
+          ]
+        },
+        {
+            path: 'gallery',
+            component: Aplicaciones,
+            children: [
+                {
+                  path:'',
+                  name: 'informacion-gallery',
+                  component: Coleccion  
+                },
+                {
+                path: ':id',
+                name: 'informacion-details',
+                component: Detalles,
+                },
+              ],
+        },
+    ]
+},
+
     {
       path: '/contactos',
       name: 'contactos',
