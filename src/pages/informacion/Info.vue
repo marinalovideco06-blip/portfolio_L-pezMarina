@@ -148,22 +148,32 @@ const autoplay = Autoplay({
            
        </section>
 
-       <section id="aplicaciones" class="bg-white w-full min-h-[60vh] lg:min-h-[120vh] flex flex-row">
-           <div class="p-10 flex flex-col gap-10">
-             <h1 class="text-4xl font-bold mb-6">aplicaciones.</h1>
-
-                <RouterLink to="info/aplicaciones">
-                   <button class="bg-black hover:bg-[rgb(24,61,246)]  text-white px-10 py-2 text-2xl border-2 rounded-full">especificaciones.</button>
-                </RouterLink>
-                 <RouterLink to="info/gallery">
-                   <button class="bg-black hover:bg-[rgb(24,61,246)]  text-white px-10 py-2 text-2xl border-2 rounded-full">aplicaciones.</button>
-                </RouterLink>
+       <section id="aplicaciones" class="bg-white w-full min-h-[60vh] lg:min-h-[90vh] flex flex-col justify-center">
+           <div class="p-10 flex flex-col items-center gap-10">
+             <div class="border-black border-4 rounded-full flex flex-row items-center justify-center m-10 mt-13 px-50">
+            <img 
+               src="/imagenes/informacion/aura-34.png" 
+               alt="">
+            <h1 class="text-4xl">
+               aplicaciones. 
+            </h1>
             </div>
 
+                <RouterLink to="info/aplicaciones">
+                   <button class="bg-black hover:bg-[rgb(24,61,246)]  text-white px-10 hover:px-40 py-2 text-2xl border-2 rounded-full transition-all font-[Urbanist]">especificaciones.</button>
+                </RouterLink>
+                 <RouterLink to="info/gallery">
+                   <button class="bg-black hover:bg-[rgb(24,61,246)]  text-white px-10 hover:px-40 py-2 text-2xl border-2 rounded-full transition-all font-[Urbanist]">aplicaciones.</button>
+                </RouterLink>
+
             <img 
-            src="/imagenes/informacion/minimarina_3.png" 
+            src="/imagenes/informacion/minimarinas.png" 
             alt=""
-            class="w-40 h-full">
+            class="w-300 h-full">
+
+            </div>
+
+            
        </section>
 
        <section id="habilidades" class="bg-black w-full min-h-[60vh] lg:min-h-[200vh] flex flex-col justify-end">
