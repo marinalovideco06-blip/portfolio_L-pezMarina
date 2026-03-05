@@ -126,7 +126,26 @@ const autoplay = Autoplay({
        </section>
 
        <section id="titulación" class="bg-black w-full min-h-[60vh] lg:min-h-[95vh] flex items-center">
-          
+        
+        <div>
+          <img src="/imagenes/informacion/imagen_2.jpg" alt="">
+        </div>
+
+          <div class="flex flex-col">
+             <div class="border-white border-4 rounded-full flex flex-row items-center m-10 mt-13">
+            <img 
+               src="/imagenes/informacion/aura-33.png" 
+               alt="">
+            <h1 class="text-4xl text-white px-5">
+               titulación. 
+            </h1>
+            </div>
+
+            <p class="text-white px-60">
+              Me encuentro titulada en Diseño y tecnologías creativas en la Universidad Politécnica de Valencia. También tengo un nivel C1 en inglés certificado por la Escuela oficial de Idiomas.
+            </p>
+          </div>
+           
        </section>
 
        <section id="aplicaciones" class="bg-white w-full min-h-[60vh] lg:min-h-[120vh] flex flex-row">
@@ -140,6 +159,11 @@ const autoplay = Autoplay({
                    <button class="bg-black hover:bg-[rgb(24,61,246)]  text-white px-10 py-2 text-2xl border-2 rounded-full">aplicaciones.</button>
                 </RouterLink>
             </div>
+
+            <img 
+            src="/imagenes/informacion/minimarina_3.png" 
+            alt=""
+            class="w-40 h-full">
        </section>
 
        <section id="habilidades" class="bg-black w-full min-h-[60vh] lg:min-h-[200vh] flex flex-col justify-end">
