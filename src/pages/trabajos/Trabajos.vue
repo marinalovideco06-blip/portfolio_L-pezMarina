@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import { Card, CardContent } from '@/components/ui/card'
+//import { Card, CardContent } from '@/components/ui/card'
 import { Carousel, CarouselContent, CarouselItem} from '@/components/ui/carousel'
 import Autoplay from 'embla-carousel-autoplay'
 
@@ -8,6 +8,15 @@ const autoplay = Autoplay({
   delay: 1500,
   stopOnInteraction: false,
 })
+
+const trabajos = [
+"/imagenes/informacion/imagen_1.jpg",
+"/imagenes/informacion/imagen_2.jpg",
+"/imagenes/informacion/imagen_1.jpg",
+"/imagenes/informacion/imagen_2.jpg",
+"/imagenes/informacion/imagen_1.jpg",
+"/imagenes/informacion/imagen_2.jpg",
+]
 
 </script>
 
@@ -28,7 +37,7 @@ const autoplay = Autoplay({
             </div>
 
             <div class="mt-40">
-              <Carousel
+             <Carousel
   class="relative w-full"
   :opts="{
     align: 'start',
@@ -37,21 +46,23 @@ const autoplay = Autoplay({
   :plugins="[autoplay]"
 >
   <CarouselContent>
+
     <CarouselItem
-      v-for="(_, index) in 10"
-      :key="index"
+      v-for="trabajo in trabajos"
+      :key="trabajo"
       class="basis-4/5 sm:basis-1/2 lg:basis-1/4"
     >
-      <div class="p-1">
-        <Card>
-          <CardContent class="flex aspect-square items-center justify-center p-10">
-            <span class="text-3xl font-semibold">
-              {{ (index % 5) + 1 }}
-            </span>
-          </CardContent>
-        </Card>
+      <div class="p-2">
+        
+        <img
+          :src="trabajo"
+          alt="trabajo"
+          class="w-full aspect-square object-cover transition-transform duration-500 hover:scale-105"
+        />
+
       </div>
     </CarouselItem>
+
   </CarouselContent>
 </Carousel>
             </div>

@@ -10,7 +10,7 @@ export interface Apps {
 export const apps: Apps [] = [
   { id: 1, 
     name: 'Photoshop', 
-    icon: '/icons/photoshop.png', 
+    icon: '/imagenes/informacion/imagen_1.jpg', 
     description: 'Holiwis' 
   },
 

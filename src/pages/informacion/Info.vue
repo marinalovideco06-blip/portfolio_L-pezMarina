@@ -27,6 +27,19 @@ const autoplay = Autoplay({
   stopOnInteraction: false,
 })
 
+const habilidades = [
+  "ux/ui.",
+  "branding.",
+  "storytelling.",
+  "marketing digital.",
+  "organización.",
+  "gestión de proyectos.",
+  "diseño interactivo.",
+  "narrativa.",
+  "ilustración.",
+  "concept art."
+]
+
 </script>
 
 
@@ -57,7 +70,7 @@ const autoplay = Autoplay({
 
     <NavigationMenuItem>
       <NavigationMenuLink @click="scrollToSection('aplicaciones')">
-        aplicaciones.
+        herramientas y estilos.
       </NavigationMenuLink>
     </NavigationMenuItem>
 
@@ -141,7 +154,7 @@ const autoplay = Autoplay({
             </h1>
             </div>
 
-            <p class="text-white px-60">
+            <p class="text-white px-50">
               Me encuentro titulada en Diseño y tecnologías creativas en la Universidad Politécnica de Valencia. También tengo un nivel C1 en inglés certificado por la Escuela oficial de Idiomas.
             </p>
           </div>
@@ -155,17 +168,17 @@ const autoplay = Autoplay({
                src="/imagenes/informacion/aura-34.png" 
                alt="">
             <h1 class="text-4xl">
-               aplicaciones. 
+               herramientas y estilos. 
             </h1>
             </div>
+                   <RouterLink to="info/gallery">
+                   <button class="bg-black hover:bg-[rgb(24,61,246)]  text-white px-10 hover:px-40 py-2 text-2xl border-2 rounded-full transition-all font-[Urbanist]">herramientas.</button>
+                </RouterLink>
 
                 <RouterLink to="info/aplicaciones">
-                   <button class="bg-black hover:bg-[rgb(24,61,246)]  text-white px-10 hover:px-40 py-2 text-2xl border-2 rounded-full transition-all font-[Urbanist]">especificaciones.</button>
+                   <button class="bg-black hover:bg-[rgb(24,61,246)]  text-white px-10 hover:px-40 py-2 text-2xl border-2 rounded-full transition-all font-[Urbanist]">estilos.</button>
                 </RouterLink>
-                 <RouterLink to="info/gallery">
-                   <button class="bg-black hover:bg-[rgb(24,61,246)]  text-white px-10 hover:px-40 py-2 text-2xl border-2 rounded-full transition-all font-[Urbanist]">aplicaciones.</button>
-                </RouterLink>
-
+              
             <img 
             src="/imagenes/informacion/minimarinas.png" 
             alt=""
@@ -176,9 +189,46 @@ const autoplay = Autoplay({
             
        </section>
 
-       <section id="habilidades" class="bg-black w-full min-h-[60vh] lg:min-h-[200vh] flex flex-col justify-end">
+       <section id="habilidades" class="bg-black w-full min-h-[60vh] lg:min-h-[140vh] flex flex-col justify-end">
+
+          <div class="flex flex-row items-center mb-20 mt-0">
+            <div class=" flex flex-col items,center">
+             <div class="border-white border-4 rounded-full flex flex-row items-center m-10 mt-13">
+            <img 
+               src="/imagenes/informacion/aura-35.png" 
+               alt="">
+            <h1 class="text-4xl text-white px-5">
+               habilidades. 
+            </h1>
+            </div>
+             <p class="text-white px-50">
+              Mis especializaciones están enfocadas en el 
+              diseño UX/UI, branding, marketing digital 
+              y en el storytelling.
+ 
+              Soy una apasionada de la organización 
+              y de la planificación, lo cual me beneficia 
+              a la hora de llevar acabo mis proyectos o 
+              en la gestión de proyectos. 
+
+              Crear historias y personajes está entre 
+              mis mejores cualidades, lo cual aprovecho 
+              al desarrollar tanto estrategias de marketing 
+              y branding como a la hora de llevar acabo 
+              proyectos más interactivos como páginas web, 
+              videojuegos o audiovisuales.
+             </p>
+            </div>
+             <div>
+              <img 
+              src="/imagenes/informacion/imagen_1.jpg" 
+              alt=""
+              class="h-auto w-400">
+             </div>
+
+          </div>
         
-          <div class="z-20 mb-100">
+          <div class="z-20 mb-80 mt-20 ">
               <Carousel
                 class="relative w-full"
                 :opts="{
@@ -189,15 +239,15 @@ const autoplay = Autoplay({
                 >
                   <CarouselContent>
                       <CarouselItem
-                         v-for="(_, index) in 10"
-                         :key="index"
-                         class="basis-4/5 sm:basis-1/2 lg:basis-1/4"
+                         v-for="habilidad in habilidades"
+                         :key="habilidad"
+                         class="basis-auto"
                          >
                             <div class="p-1">
-                               <Card>
-                                 <CardContent class="flex aspect-square items-center justify-center p-10">
+                               <Card class="rounded-full font-[Urbanist] border-white px-10 py-4 text-white bg-transparent border-3 hover:bg-[rgb(24,61,246)] hover:px-20 transition-all">
+                                 <CardContent class="flex items-center justify-center">
                                     <span class="text-3xl font-semibold">
-                                      {{ (index % 5) + 1 }}
+                                       {{ habilidad }}
                                     </span>
                                  </CardContent>
                                </Card>
