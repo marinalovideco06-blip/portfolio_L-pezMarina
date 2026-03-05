@@ -36,7 +36,7 @@ const trabajos = [
              </div>
             </div>
 
-            <div class="mt-40">
+            <div class="mt-20">
              <Carousel
   class="relative w-full"
   :opts="{
@@ -68,11 +68,11 @@ const trabajos = [
             </div>
 
             <div>
-              <h1 class="bg-black text-white text-6xl border-4 rounded-full px-12 py-4 mb-4 mt-60 flex justify-center">
+              <h1 class="bg-black text-white text-6xl border-4 rounded-full px-12 py-4 mb-4 mt-30 flex justify-center">
                    selección de trabajos.
                </h1>
                <div class="z-20">
-        <p class="text-white p-40 text-lg px-95">
+        <p class="text-white p-20 text-lg px-95">
           He realizado gran cantidad de trabajos a lo largo de mi carrera pero he querido hacer un recopilatorio de los más relevantes y que más representan mi estilo personal y competencia.. 
         </p>
             </div>

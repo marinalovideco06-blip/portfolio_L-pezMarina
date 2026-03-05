@@ -88,10 +88,18 @@ const habilidades = [
 </Button>
              </div>
           
+
         </div>
        
 
-        <h1 class="bg-black text-white text-6xl border-4 rounded-full px-12 py-4 m-30 mt-110">
+          <div class="flex justify-end">
+          <img 
+        src="/imagenes/informacion/prueba_fondo.png" 
+        alt=""
+        class="h-auto">
+        </div>
+
+        <h1 class="bg-black text-white text-6xl border-4 rounded-full px-12 py-4 m-6">
            blue.marina
          </h1>
 
