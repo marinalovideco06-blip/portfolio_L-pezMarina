@@ -17,21 +17,23 @@ const filteredWorks = works.filter(w => w.section === slug)
   <img 
   src="/imagenes/trabajos/degradado_blanco_horizontal.PNG" 
   alt=""
-  class="absolute z-10">
+  class="absolute top-0 left-0 w-full z-10 pointer-events-none">
 
-  <div class="bg-white w-full min-h-screen flex flex-col gap-20 items-center z-20">
-    <h1 class="text-black text-9xl mt-40 z-20">{{ section?.name }}</h1>
+  <div class="bg-white w-full min-h-screen flex flex-col gap-20 items-center z-20 px-6 sm:px-10">
+    <h1 class="text-black text-6xl sm:text-7xl md:text-8xl lg:text-9xl mt-20 sm:mt-40 z-20 text-center">
+      {{ section?.name }}
+    </h1>
 
-    <div class="mt-10 flex gap-4 z-20">
+    <div class="mt-10 flex flex-wrap justify-center gap-4 z-20">
       <RouterLink to="/contactos">
         <button class="z-20 border-2 bg-black rounded-full border-black px-6 py-2 text-white hover:bg-[rgb(24,61,246)] hover:border-[rgb(24,61,246) hover:text-white hover:border-[rgb(24,61,246)]">comisiones.</button>
       </RouterLink>
       <RouterLink to="/trabajos">
-        <button class="z-20 border-2 rounded-full border-black px-2 py-2 text-black hover:bg-[rgb(24,61,246)] hover:border-[rgb(24,61,246) hover:text-white hover:border-[rgb(24,61,246)]">EXIT</button>
+        <button class="z-20 border-2 rounded-full border-black px-2 py-2 text-black hover:bg-[rgb(24,61,246)] hover:text-white hover:border-[rgb(24,61,246)]">EXIT</button>
       </RouterLink>
     </div>
 
-    <p class="text-lg mt-20 px-100">
+    <p class="text-sm sm:text-lg mt-10 sm:mt-20 px-6 sm:px-20 lg:px-60 text-center">
       {{ section?.text }}
     </p>
 
@@ -48,7 +50,7 @@ const filteredWorks = works.filter(w => w.section === slug)
       <CarouselItem
         v-for="work in filteredWorks"
         :key="work.id"
-        class="min-w-62.5 sm:min-w-75 lg:min-w-87.5 mr-6"
+        class="min-w-55 sm:min-w-65 lg:min-w-[320px] mr-6"
       >
        <RouterLink :to="`/trabajo/${work.id}`">
   <div class="relative aspect-square bg-white rounded-2xl shadow-lg overflow-hidden border group cursor-pointer">
@@ -64,7 +66,7 @@ const filteredWorks = works.filter(w => w.section === slug)
 
     <!-- Título -->
     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
-      <h2 class="text-white text-2xl font-semibold text-center px-4">
+      <h2 class="text-white text-lg sm:text-2xl font-semibold text-center px-4">
         {{ work.title }}
       </h2>
     </div>
