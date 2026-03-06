@@ -48,12 +48,14 @@ const habilidades = [
 
        <section id="portada" class="bg-black w-full min-h-[60vh] lg:min-h-[95vh] flex flex-col ">
         
-        <div class="flex flex-row justify-between font-[Urbanist]">
-             <h2 class="text-white border-4 rounded-full flex flex-row items-center m-10 mt-13 px-12 py-2 font-bold">
+        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center font-[Urbanist]">
+             <h2 class="text-white border-4 rounded-full flex items-center 
+m-4 lg:m-10 mt-6 lg:mt-13 px-6 lg:px-12 py-2 font-bold">
           Información personal.
         </h2>
-             <div class="flex flex-row">
-                <NavigationMenu class="text-white border-2 rounded-full flex flex-row items-center m-10 mt-13 px-12 py-2 hover:bg-[rgb(24,61,246)]">
+             <div class="flex flex-col lg:flex-row lg:justify-between font-[Urbanist]">
+                <NavigationMenu class="text-white border-2 rounded-full flex flex-wrap items-center
+m-4 lg:m-10 mt-6 lg:mt-13 px-6 lg:px-12 py-2 hover:bg-[rgb(24,61,246)]">
   <NavigationMenuList >
 
     <NavigationMenuItem>
@@ -92,53 +94,54 @@ const habilidades = [
         </div>
        
 
-          <div class="flex justify-end">
+          <div class="flex justify-center lg:justify-end">
           <img 
         src="/imagenes/informacion/prueba_fondo.png" 
         alt=""
         class="h-auto">
         </div>
 
-        <h1 class="bg-black text-white text-6xl border-4 rounded-full px-12 py-4 m-6">
+        <h1 class="bg-black text-white text-3xl sm:text-4xl lg:text-6xl border-4 rounded-full px-6 lg:px-12 py-3 lg:py-4 m-6">
            blue.marina
          </h1>
 
        </section>
 
-       <section id="personal" class="bg-white w-full min-h-[60vh] lg:min-h-[120vh] flex flex-row">
+       <section id="personal" class="bg-white w-full min-h-[60vh] lg:min-h-[120vh] flex flex-col lg:flex-row">
         
-         <div class="flex flex-col p-10 justify-center gap-15">
+         <div class="flex flex-col p-6 lg:p-10 justify-start gap-6 lg:gap-15 lg:w-1/2">
           <img 
            src="/imagenes/informacion/imagen_1.jpg" 
            alt=""
-           class="w-2/2 h-auto">
+           class="w-48 sm:w-64 lg:w-100 h-auto mx-auto">
 
            <img 
            src="/imagenes/informacion/imagen_2.jpg" 
            alt=""
-           class="w-2/2 h-auto">
+           class="w-48 sm:w-64 lg:w-100 h-auto mx-auto">
          </div>
         
 
-        <div class="flex flex-col justify-start">
-            <div class="border-black border-4 rounded-full flex flex-row items-center m-10 mt-13">
+        <div class="flex flex-col justify-start lg:w-1/2">
+            <div class="border-black border-4 rounded-full flex items-center m-6 lg:m-10 px-4 lg:px-6 py-2">
             <img 
                src="/imagenes/informacion/aura-32.png" 
-               alt="">
-            <h1 class="text-4xl">
+               alt=""
+               >
+            <h1 class="text-2xl lg:text-4xl">
                información personal. 
             </h1>
             </div>
 
             <div class="flex flex-col items-end">
-               <p class="m-40 mt-20">
+               <p class="m-6 lg:m-20 max-w-xl text-left">
               Mi nombre es Marina López Villegas, y soy una diseñadora, ilustradora y escritura. Especializada en desarrollo de proyectos multidisciplinares de organización, marketing, narrativa y storytelling y desarrollo de tecnologías interactivas 
             </p>
 
             <img 
                src="/imagenes/informacion/minimarina_1.png" 
                alt=""
-               class="w-50 p-3"
+               class="w-32 lg:w-50 p-3"
                >
             </div>
             
