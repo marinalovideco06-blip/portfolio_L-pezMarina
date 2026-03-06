@@ -85,7 +85,7 @@ const dies = ref<DateValue>()
           <img 
         src="/imagenes/informacion/prueba_fondo2.png" 
         alt=""
-        class="w-full max-w-225 h-auto">
+        class="w-full max-w-7xl h-auto">
         </div>
 
         <h1 class="bg-black text-white text-3xl md:text-5xl lg:text-6xl border-4 rounded-full px-6 md:px-12 py-4 m-6">
