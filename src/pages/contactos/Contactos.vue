@@ -50,12 +50,12 @@ const dies = ref<DateValue>()
     <div>
        <section id="portada" class="bg-black w-full min-h-[60vh] lg:min-h-[95vh] flex flex-col ">
         
-        <div class="flex flex-row justify-between font-[Urbanist]">
+        <div class="flex flex-col md:flex-row md:justify-between font-[Urbanist]">
              <h2 class="text-white border-4 rounded-full flex flex-row items-center m-10 mt-13 px-12 py-2 font-bold">
           Contactos y redes.
         </h2>
              <div class="flex flex-row">
-                <NavigationMenu class="text-white border-2 rounded-full flex flex-row items-center m-10 mt-13 px-12 py-2 hover:bg-[rgb(24,61,246)]">
+                <NavigationMenu class="text-white border-2 rounded-full flex flex-row items-center m-10 mt-13 lg:px-12 lg:py-2 hover:bg-[rgb(24,61,246)] ">
   <NavigationMenuList >
 
     <NavigationMenuItem>
@@ -85,16 +85,16 @@ const dies = ref<DateValue>()
           <img 
         src="/imagenes/informacion/prueba_fondo2.png" 
         alt=""
-        class="h-auto">
+        class="w-full max-w-225 h-auto">
         </div>
 
-        <h1 class="bg-black text-white text-6xl border-4 rounded-full px-12 py-4 m-6">
+        <h1 class="bg-black text-white text-3xl md:text-5xl lg:text-6xl border-4 rounded-full px-6 md:px-12 py-4 m-6">
            blue.marina
          </h1>
 
        </section>
 
-       <section id="comisiones." class="bg-white w-full min-h-[60vh] lg:min-h-[120vh] flex flex-row">
+       <section id="comisiones." class="bg-white w-full min-h-[60vh] lg:min-h-[120vh] flex flex-col lg:flex-row">
 
           <div class="flex flex-col justify-between items-start">
           <div class="flex flex-col">
@@ -102,13 +102,13 @@ const dies = ref<DateValue>()
             <img 
                src="/imagenes/contactos/aura-38.png" 
                alt=""
-               class="mb-6">
+               class="lg:mb-6 lg:w-50 w-20 mb-2 sm:w-24">
             <h1 class="text-4xl">
                comisiones. 
             </h1>
             </div>
 
-            <div class="m-8 px-30">
+            <div class="m-8 px-6 md:px-20">
               <p>Si estás interesado en realizar una comisión, rellena el siguiente formulario y podremos concretar una reunión para hablar los detalles,estoy deseando saber sobre tus ideas...</p>
             </div>
          </div>
@@ -116,14 +116,14 @@ const dies = ref<DateValue>()
             <img 
             src="/imagenes/contactos/imagen_2.jpg" 
             alt=""
-            class="w-100 mb-20"
+            class="w-60 md:w-80 lg:w-100 mb-20"
             >
           </div>
         </div> 
 
          <div class="w-full max-w-md mx-auto lg:max-w-none lg:w-1/2 mt-20 mb-20 px-10">
 
-          <form  class="flex flex-col gap-20 justify-around bg-black text-white p-20 rounded-4xl shadow-lg aspect-square">
+          <form  class="flex flex-col gap-10 md:gap-16 justify-around bg-black text-white p-8 md:p-16 rounded-4xl shadow-lg">
           
             <div class="flex flex-col gap-10 justify-around">
 
@@ -218,7 +218,7 @@ const dies = ref<DateValue>()
            >
 
          
-           <div class="flex flex-row justify-center z-20">
+           <div class="flex flex-col lg:flex-row justify-center z-20">
              //TITULO SECCION
               <div class="flex flex-col justify-around items-center gap-10">  
               
@@ -227,7 +227,7 @@ const dies = ref<DateValue>()
                   src="/imagenes/contactos/aura-39.png" 
                   alt=""
                   class="w-30 m-4">
-                <h1 class="text-6xl m-10">
+                <h1 class="text-3xl md:text-5xl lg:text-6xl m-6 md:m-10">
                   contactos. 
                 </h1>
               </div> 
@@ -243,7 +243,7 @@ const dies = ref<DateValue>()
            <div class="z-20 flex flex-col items-center mt-6 my-5">
             
              <div class="border-white border-4 rounded-full text-white flex flex-row items-center m-10 mt-13 gap-3">
-                 <Mail class="w-15 h-auto m-4 "/>
+                 <Mail class="w-8 md:w-12 lg:w-15 h-auto m-4 "/>
                  <h1 class="text-2xl">
                     blue.marina@gmail.com 
                  </h1>
@@ -254,7 +254,7 @@ const dies = ref<DateValue>()
                  </div> 
 
              <div class="border-white border-4 rounded-full text-white flex flex-row items-center m-10 mt-13 gap-3">
-               <Instagram class="w-15 h-auto m-4 "/>
+               <Instagram class="w-8 md:w-12 lg:w-15 h-auto m-4"/>
                <h1 class="text-2xl">
                   @blue.marina_06 
                </h1>
@@ -265,7 +265,7 @@ const dies = ref<DateValue>()
                </div> 
 
              <div class="border-white border-4 rounded-full text-white flex flex-row items-center m-10 mt-13 gap-3">
-                <Facebook class="w-15 h-auto m-4 "/>
+                <Facebook class="w-8 md:w-12 lg:w-15 h-auto m-4"/>
                 <h1 class="text-2xl">
                    @blue.marina_06 
                 </h1>
@@ -276,7 +276,7 @@ const dies = ref<DateValue>()
               </div> 
 
                  <div class="border-white border-4 rounded-full text-white flex flex-row items-center m-10 mt-13 gap-3">
-                    <Phone class="w-15 h-auto m-4 "/>
+                    <Phone class="w-8 md:w-12 lg:w-15 h-auto m-4"/>
                     <h1 class="text-2xl">
                        246 802 468 
                     </h1>
