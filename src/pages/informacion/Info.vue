@@ -149,23 +149,27 @@ m-4 lg:m-10 mt-6 lg:mt-13 px-6 lg:px-12 py-2 hover:bg-[rgb(24,61,246)]">
        
        </section>
 
-       <section id="titulación" class="bg-black w-full min-h-[60vh] lg:min-h-[95vh] flex items-center">
+       <section id="titulación" class="bg-black w-full min-h-[60vh] lg:min-h-[95vh] flex flex-col lg:flex-row items-center">
         
         <div>
-          <img src="/imagenes/informacion/imagen_2.jpg" alt="">
+          <img 
+          src="/imagenes/informacion/imagen_2.jpg" 
+          alt=""
+          class="w-48 sm:w-64 lg:w-96 h-auto m-6 lg:m-10 rounded-xl">
         </div>
 
           <div class="flex flex-col">
-             <div class="border-white border-4 rounded-full flex flex-row items-center m-10 mt-13">
+             <div class="border-white border-4 rounded-full flex items-center m-6 lg:m-10 px-4 lg:px-6 py-2">
             <img 
                src="/imagenes/informacion/aura-33.png" 
-               alt="">
-            <h1 class="text-4xl text-white px-5">
+               alt=""
+               class="lg-2/2 w-30">
+            <h1 class="text-2xl lg:text-4xl text-white px-3 lg:px-5">
                titulación. 
             </h1>
             </div>
 
-            <p class="text-white px-50">
+            <p class="text-white px-6 lg:px-20 max-w-xl mb-20">
               Me encuentro titulada en Diseño y tecnologías creativas en la Universidad Politécnica de Valencia. También tengo un nivel C1 en inglés certificado por la Escuela oficial de Idiomas.
             </p>
           </div>
@@ -174,20 +178,21 @@ m-4 lg:m-10 mt-6 lg:mt-13 px-6 lg:px-12 py-2 hover:bg-[rgb(24,61,246)]">
 
        <section id="aplicaciones" class="bg-white w-full min-h-[60vh] lg:min-h-[90vh] flex flex-col justify-center">
            <div class="p-10 flex flex-col items-center gap-10">
-             <div class="border-black border-4 rounded-full flex flex-row items-center justify-center m-10 mt-13 px-50">
+             <div class="border-black border-4 rounded-full flex items-center justify-center m-6 lg:m-10 px-6 lg:px-20 py-2">
             <img 
                src="/imagenes/informacion/aura-34.png" 
-               alt="">
-            <h1 class="text-4xl">
+               alt=""
+               class="lg:w-60 w-30 ">
+            <h1 class="text-2xl lg:text-4xl">
                herramientas y estilos. 
             </h1>
             </div>
                    <RouterLink to="info/gallery">
-                   <button class="bg-black hover:bg-[rgb(24,61,246)]  text-white px-10 hover:px-40 py-2 text-2xl border-2 rounded-full transition-all font-[Urbanist]">herramientas.</button>
+                   <button class="bg-black hover:bg-[rgb(24,61,246)] text-white px-6 lg:px-10 hover:lg:px-40 py-2 text-lg lg:text-2xl border-2 rounded-full transition-all font-[Urbanist]">herramientas.</button>
                 </RouterLink>
 
                 <RouterLink to="info/aplicaciones">
-                   <button class="bg-black hover:bg-[rgb(24,61,246)]  text-white px-10 hover:px-40 py-2 text-2xl border-2 rounded-full transition-all font-[Urbanist]">estilos.</button>
+                   <button class="bg-black hover:bg-[rgb(24,61,246)] text-white px-6 lg:px-10 hover:lg:px-40 py-2 text-lg lg:text-2xl border-2 rounded-full transition-all font-[Urbanist]">estilos.</button>
                 </RouterLink>
               
             <img 
@@ -202,17 +207,18 @@ m-4 lg:m-10 mt-6 lg:mt-13 px-6 lg:px-12 py-2 hover:bg-[rgb(24,61,246)]">
 
        <section id="habilidades" class="bg-black w-full min-h-[60vh] lg:min-h-[140vh] flex flex-col justify-end">
 
-          <div class="flex flex-row items-center mb-20 mt-0">
-            <div class=" flex flex-col items,center">
-             <div class="border-white border-4 rounded-full flex flex-row items-center m-10 mt-13">
+          <div class="flex flex-col lg:flex-row items-center mb-20">
+            <div class="flex flex-col items-center lg:items-start lg:w-1/2">
+             <div class="border-white border-4 rounded-full flex flex-row items-center m-6 lg:m-10 px-6 lg:px-6 py-2">
             <img 
                src="/imagenes/informacion/aura-35.png" 
-               alt="">
-            <h1 class="text-4xl text-white px-5">
+               alt=""
+               class="lg:w-60 w-30">
+            <h1 class="text-2xl lg:text-4xl text-white px-3 lg:px-5">
                habilidades. 
             </h1>
             </div>
-             <p class="text-white px-50">
+             <p class="text-white px-6 lg:px-20 max-w-xl">
               Mis especializaciones están enfocadas en el 
               diseño UX/UI, branding, marketing digital 
               y en el storytelling.
@@ -234,12 +240,12 @@ m-4 lg:m-10 mt-6 lg:mt-13 px-6 lg:px-12 py-2 hover:bg-[rgb(24,61,246)]">
               <img 
               src="/imagenes/informacion/imagen_1.jpg" 
               alt=""
-              class="h-auto w-400">
+              class="w-48 sm:w-72 lg:w-125 h-auto m-6">
              </div>
 
           </div>
         
-          <div class="z-20 mb-80 mt-20 ">
+          <div class="z-20 mb-40 mt-20 ">
               <Carousel
                 class="relative w-full"
                 :opts="{
@@ -255,9 +261,9 @@ m-4 lg:m-10 mt-6 lg:mt-13 px-6 lg:px-12 py-2 hover:bg-[rgb(24,61,246)]">
                          class="basis-auto"
                          >
                             <div class="p-1">
-                               <Card class="rounded-full font-[Urbanist] border-white px-10 py-4 text-white bg-transparent border-3 hover:bg-[rgb(24,61,246)] hover:px-20 transition-all">
+                               <Card class="rounded-full font-[Urbanist] border-white px-6 lg:px-10 py-3 lg:py-4 text-white bg-transparent border-3 hover:bg-[rgb(24,61,246)] hover:lg:px-20 transition-all">
                                  <CardContent class="flex items-center justify-center">
-                                    <span class="text-3xl font-semibold">
+                                    <span class="text-lg lg:text-3xl font-semibold">
                                        {{ habilidad }}
                                     </span>
                                  </CardContent>

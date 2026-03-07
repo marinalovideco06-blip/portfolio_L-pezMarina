@@ -38,11 +38,11 @@ const paginaNumeri: number[] = [ ...Array(totalPaginas)].map ((_, i) => i + 1)
   
       <div class="text-center">
 
-        <h1 class="font-bold text-xl lg:text-6xl mb-10">
+        <h1 class="font-bold text-6xl lg:text-9xl mb-10">
           herramientas.
         </h1>
 
-        <p class="mb-4 mt-4">
+        <p class="mb-10 mt-4">
           Gracias a mi titulación me encuentro plenamente capacitada y especializada en una amplia variedad de programas, entre ellos los siguientes.
         </p>
         
