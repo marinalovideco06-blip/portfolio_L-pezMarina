@@ -45,15 +45,15 @@ const filteredWorks = works.filter(w => w.section === slug)
     }"
     class="w-full"
   >
-    <CarouselContent class="flex">
+    <CarouselContent class="flex gap-8">
 
       <CarouselItem
         v-for="work in filteredWorks"
         :key="work.id"
-        class="min-w-55 sm:min-w-65 lg:min-w-[320px] mr-6"
+        class="basis-65 sm:basis-75 lg:basis-[320px] shrink-0"
       >
        <RouterLink :to="`/trabajo/${work.id}`">
-  <div class="relative aspect-square bg-white rounded-2xl shadow-lg overflow-hidden border group cursor-pointer">
+  <div class="relative w-full h-80 bg-white rounded-2xl shadow-lg overflow-hidden border group cursor-pointer">
 
     <!-- Imagen -->
     <img

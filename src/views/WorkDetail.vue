@@ -6,6 +6,15 @@ const route = useRoute()
 const id = Number(route.params.id)
 
 const work = works.find(w => w.id === id)
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious
+} from '@/components/ui/carousel'
+
 </script>
 
 <template>
@@ -31,14 +40,14 @@ const work = works.find(w => w.id === id)
           :opts="{ align: 'start', loop: true }"
           class="w-full"
         >
-          <CarouselContent class="flex justify-center">
+          <CarouselContent class="flex gap-6">
 
             <CarouselItem
               v-for="(img, index) in work?.images"
               :key="index"
-              class="min-w-55 sm:min-w-[320px] lg:min-w-105 mr-6"
+              class="basis-[260px] sm:basis-[320px] lg:basis-[380px] shrink-0"
             >
-              <div class="aspect-square rounded-2xl overflow-hidden shadow-lg bg-white">
+              <div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg bg-white">
                 <img
                   :src="img"
                   class="w-full h-full object-cover"
@@ -47,6 +56,10 @@ const work = works.find(w => w.id === id)
             </CarouselItem>
 
           </CarouselContent>
+
+           <CarouselPrevious />
+  <CarouselNext />
+
         </Carousel>
       </div>
 
