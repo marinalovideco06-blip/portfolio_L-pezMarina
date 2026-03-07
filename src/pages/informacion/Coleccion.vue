@@ -59,8 +59,8 @@ const paginaNumeri: number[] = [ ...Array(totalPaginas)].map ((_, i) => i + 1)
         <CardContent class="flex flex-col items-center gap-1 w-full px-0"
         @click="$router.push(`/info/gallery/${ apps.id }`)"
         >
-           <img :src="`/imagenes/info/${ apps.icon }`" alt=""
-           class="w-48 h-42 object-cover object-top mt-2 rounded-lg border-2 border-black"
+           <img :src="`${ apps.icon }`" alt=""
+           class="w-40 h-42 object-cover object-top mt-2 rounded-lg border-2 border-black"
            >
             <h2 class="font-medium text-lg">{{ apps.name }}</h2> 
         </CardContent>

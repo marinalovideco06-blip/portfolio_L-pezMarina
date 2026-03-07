@@ -50,7 +50,7 @@ const aplicacion = ref<Apps | undefined>(
   <img 
     :src="`${aplicacion.icon}`"
     :alt="aplicacion.name"
-    class="w-40 sm:w-52 lg:w-60 object-contain"
+    class="w-40 sm:w-52 lg:w-60 object-contain border-2 border-black rounded-lg"
   />
 </figure>
     </div>
