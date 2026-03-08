@@ -45,7 +45,7 @@ import {
             <CarouselItem
               v-for="(img, index) in work?.images"
               :key="index"
-              class="basis-[260px] sm:basis-[320px] lg:basis-[380px] shrink-0"
+              class="basis-65 sm:basis-[320px] lg:basis-95 shrink-0"
             >
               <div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg bg-white">
                 <img
