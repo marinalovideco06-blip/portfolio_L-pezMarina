@@ -69,5 +69,24 @@ export const works = [
       "/imagenes/trabajos/transversal_12.jpg",
     ], image: "/imagenes/trabajos/transversal_8.jpg", description: "Mi juego vitamina tiene como objetivo ser un juego colaborativo para poder explorar nuevas formas de cuidar nuestra mente y como evitar conductas toxicas mediante un juego accesible para mayores de 12 años." },
   
+   { id: 7, section: "ilustracion", title: "Origen",  images: [
+      "/imagenes/trabajos/origen_1.png",
+      "/imagenes/trabajos/origen_2.png",
+      "/imagenes/trabajos/origen_3.png",
+      "/imagenes/trabajos/origen_4.png",
+      "/imagenes/trabajos/origen_5.png",
+      "/imagenes/trabajos/origen_6.png",
+      "/imagenes/trabajos/origen_7.png",
+      "/imagenes/trabajos/origen_8.png",
+      "/imagenes/trabajos/origen_9.png",
+      "/imagenes/trabajos/origen_10.png",
+      "/imagenes/trabajos/origen_11.png",
+      "/imagenes/trabajos/origen_12.png",
+      "/imagenes/trabajos/origen_13.png",
+      "/imagenes/trabajos/origen_14.png",
+      "/imagenes/trabajos/origen_15.png",
+      "/imagenes/trabajos/origen_16.png",
+      "/imagenes/trabajos/origen_17.png",
+    ], image: "/imagenes/trabajos/origen_17.png", description: "Origen es un proyecto de fantasía para el cual he desarrollado ilustraciones destinadas como parte de un glosario de criaturas fantásticas." },
   
   ]

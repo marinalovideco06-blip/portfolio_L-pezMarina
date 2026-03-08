@@ -10,6 +10,15 @@ const section = sections.find(s => s.slug === slug)
 
 // Filtra los trabajos de esta sección
 const filteredWorks = works.filter(w => w.section === slug)
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious
+} from '@/components/ui/carousel'
+
 </script>
 
 <template>
@@ -76,6 +85,10 @@ const filteredWorks = works.filter(w => w.section === slug)
       </CarouselItem>
 
     </CarouselContent>
+
+    <CarouselPrevious />
+<CarouselNext />
+
   </Carousel>
 </div>
   </div>
