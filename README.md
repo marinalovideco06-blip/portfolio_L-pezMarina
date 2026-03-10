@@ -1,4 +1,4 @@
-# Web de Nombre y apellido
+# Web de Marina López Villegas
 
 Este proyecto es una web de tipo...
 
