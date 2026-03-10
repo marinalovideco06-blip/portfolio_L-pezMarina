@@ -96,7 +96,7 @@ m-4 lg:m-10 mt-6 lg:mt-13 px-6 lg:px-12 py-2 hover:bg-[rgb(24,61,246)]">
 
           <div class="flex justify-center lg:justify-end">
           <img 
-        src="/imagenes/informacion/prueba_fondo.png" 
+        src="/imagenes/home/guias_3.png" 
         alt=""
         class="h-auto">
         </div>
@@ -111,12 +111,12 @@ m-4 lg:m-10 mt-6 lg:mt-13 px-6 lg:px-12 py-2 hover:bg-[rgb(24,61,246)]">
         
          <div class="flex flex-col p-6 lg:p-10 justify-start gap-6 lg:gap-15 lg:w-1/2">
           <img 
-           src="/imagenes/informacion/imagen_1.jpg" 
+           src="/imagenes/home/marina_1.png" 
            alt=""
            class="w-48 sm:w-64 lg:w-100 h-auto mx-auto">
 
            <img 
-           src="/imagenes/informacion/imagen_2.jpg" 
+           src="/imagenes/home/marina_2.png" 
            alt=""
            class="w-48 sm:w-64 lg:w-100 h-auto mx-auto">
          </div>
@@ -153,9 +153,9 @@ m-4 lg:m-10 mt-6 lg:mt-13 px-6 lg:px-12 py-2 hover:bg-[rgb(24,61,246)]">
         
         <div>
           <img 
-          src="/imagenes/informacion/imagen_2.jpg" 
+          src="/imagenes/home/guias_4.png" 
           alt=""
-          class="w-48 sm:w-64 lg:w-96 h-auto m-6 lg:m-10 rounded-xl">
+          class="w-90 sm:w-150 lg:w-200 h-auto m-6 lg:m-10 rounded-xl">
         </div>
 
           <div class="flex flex-col">
@@ -238,9 +238,9 @@ m-4 lg:m-10 mt-6 lg:mt-13 px-6 lg:px-12 py-2 hover:bg-[rgb(24,61,246)]">
             </div>
              <div>
               <img 
-              src="/imagenes/informacion/imagen_1.jpg" 
+              src="/imagenes/home/guias_2.png" 
               alt=""
-              class="w-48 sm:w-72 lg:w-125 h-auto m-6">
+              class="w-80 sm:w-150 lg:w-200 h-auto m-6">
              </div>
 
           </div>

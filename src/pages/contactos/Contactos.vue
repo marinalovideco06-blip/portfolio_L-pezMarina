@@ -83,7 +83,7 @@ const dies = ref<DateValue>()
 
         <div class="flex justify-start">
           <img 
-        src="/imagenes/informacion/prueba_fondo2.png" 
+        src="/imagenes/home/guias_1.png" 
         alt=""
         class="w-full max-w-7xl h-auto">
         </div>
@@ -114,9 +114,9 @@ const dies = ref<DateValue>()
          </div>
           <div>
             <img 
-            src="/imagenes/contactos/imagen_2.jpg" 
+            src="/imagenes/home/guias_5.png" 
             alt=""
-            class="w-60 md:w-80 lg:w-100 mb-20"
+            class="w-100 md:w-150 lg:w-200 mb-20"
             >
           </div>
         </div> 
@@ -197,7 +197,7 @@ const dies = ref<DateValue>()
             
 
           <img 
-          src="/imagenes/contactos/imagen_2.jpg" 
+          src="/imagenes/home/guias_7.png" 
           alt=""
           class="rounded-lg object-cover w-full h-full max-h-150"
           >

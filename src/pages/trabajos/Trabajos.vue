@@ -10,12 +10,16 @@ const autoplay = Autoplay({
 })
 
 const trabajos = [
-"/imagenes/informacion/imagen_1.jpg",
-"/imagenes/informacion/imagen_2.jpg",
-"/imagenes/informacion/imagen_1.jpg",
-"/imagenes/informacion/imagen_2.jpg",
-"/imagenes/informacion/imagen_1.jpg",
-"/imagenes/informacion/imagen_2.jpg",
+"/imagenes/home/guias_6.png",
+"/imagenes/home/guias_8.png",
+"/imagenes/home/guias_9.png",
+"/imagenes/home/guias_10.png",
+"/imagenes/home/guias_11.png",
+"/imagenes/home/guias_6.png",
+"/imagenes/home/guias_8.png",
+"/imagenes/home/guias_9.png",
+"/imagenes/home/guias_10.png",
+"/imagenes/home/guias_11.png",
 ]
 
 </script>
